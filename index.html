@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="mobile.png" alt="logo" style="max-width: 50px;">
+        <h1>PHONO</h1>
+    </div>
+     <nav class="navbar">
+        <ul>
+            <li><a href=" # " >Home</a> </li>
+            <li><a href=" # ">About</a></li>
+            <li><a href=" # ">Service</a></li>
+            <li><a href=" # ">Contact Us</a></li>
+            <div class="search"><input type="text" name="search" id="search" placeholder="SEARCH"></div>
+        </ul>
+    </nav>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">All Categories:</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Trending Products</a>
+          <a href="#home">Blutooth & TWS</a>
+          <a href="#home">Battery & Powerbanks</a>
+          <a href="#home">Connector & OTG</a>
+          <a href="#home">Data Cables AND Charges</a>
+          <a href="#home">Earphones AND Headphones</a>
+          <a href="#home">Memory Cards & Mobile Stands</a>
+          <a href="#home">Tempered Glass</a>
+          <a href="#home">Mobiles & Speakers</a>
+          <a href="#home">Tripod & Selfie Sticks</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="mobile1.jpg" alt="background" style= "width:100%">
+        </div>
+        <div class="column">
+          <img src="mobile2.jpg" alt="background" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="mobile3.jpg" alt="background" style="width:100%">
+          <div class="column">
+          
+          
+        </div>
+      </div>
+      <footer>
+        <p>Company : Phonos<br>
+        <a href="mailto:phonos@example.com">phonos@example.com</a></p>
+      </footer>
+      <script>
+      
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+</body>
+</html>
